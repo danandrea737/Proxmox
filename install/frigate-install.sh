@@ -20,7 +20,7 @@ msg_ok "Installed Dependencies"
 
 msg_info "Installing Python3 Dependencies"
 $STD apt-get install -y {python3,python3-dev,python3-setuptools,python3-pip}
-$STD pip install --upgrade pip
+$STD pip install --upgrade pip || true
 msg_ok "Installed Python3 Dependencies"
 
 msg_info "Installing Node.js"
